@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_library"
+            android:title="Classes"/>
+        <item
+            android:id="@+id/todo"
+android:icon="@drawable/ic_to_do"
+            android:title="TODO" />
+        <item
+            android:id="@+id/missing"
+            android:icon="@drawable/ic_cancel"
+            android:title="Missing" />
+        <item
+            android:id="@+id/completed"
+            android:icon="@drawable/ic_checkbox"
+            android:title="Completed" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info"
+            android:title="About"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="LogOut"/>
+    </group>
+</menu>

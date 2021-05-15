@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragmentListSubjects">
+
+
+    <fragment
+        android:id="@+id/fragmentListSubjects"
+        android:name="com.example.chatapplication.home.FragmentListSubjects"
+        tools:layout="@layout/fragment_list_subjects"
+        android:label="Subjects" >
+        <action
+            android:id="@+id/action_fragmentListSubjects_to_fragmentOpenSubject"
+            app:destination="@id/fragmentOpenSubject" >
+            <argument
+                android:name="name"
+                app:argType="string" />
+            <argument
+                android:name="id"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOpenSubject"
+        android:name="com.example.chatapplication.openSubject.FragmentOpenSubject"
+        android:label="FragmentOpenSubject" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0"/>
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.chatapplication.AboutFragment"
+        android:label="About" />
+</navigation>
